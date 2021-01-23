@@ -49,6 +49,8 @@ function displayJokes(jokes) {
 // Displays Error if the number of jokes is not positive
 function isValidNumber(num, inputEl) {
   if (num > 0) {
+    inputEl.style.borderColor = '';
+    inputEl.nextElementSibling && inputEl.nextElementSibling.remove();
     return true;
   }
   inputEl.style.borderColor = 'red';
